@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-background-color{
+    background-color: rgb(15 23 42 / 1);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.icons{
+    font-size: 1.6rem;
+}
