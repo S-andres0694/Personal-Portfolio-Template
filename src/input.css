@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page-background-color{
-    background-color: rgb(15 23 42 / 1);
+        background: rgb(15, 23, 42, 1);
 }
 
 body{
@@ -12,4 +12,16 @@ body{
 
 .icons{
     font-size: 1.6rem;
+}
+
+.cursor {
+    position: absolute;
+    width: 600px;  /* Width of the gradient */
+    height: 600px; /* Height of the gradient */
+    border-radius: 50%; /* Makes it circular */
+    pointer-events: none; /* So it doesn’t block clicks */
+    background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 60%);
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: opacity 0.4s ease; /* Optional: for a smooth fade-in/out */
+    opacity: 0; /* Initially hidden */
 }
