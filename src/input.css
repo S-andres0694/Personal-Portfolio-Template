@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
 .icons{
@@ -16,12 +17,28 @@ body{
 
 .cursor {
     position: absolute;
-    width: 600px;  /* Width of the gradient */
-    height: 600px; /* Height of the gradient */
+    min-width: 600px;  /* Width of the gradient */
+    min-height: 600px; /* Height of the gradient */
     border-radius: 50%; /* Makes it circular */
     pointer-events: none; /* So it doesn’t block clicks */
     background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 60%);
     transform: translate(-50%, -50%); /* Center the cursor */
     transition: opacity 0.4s ease; /* Optional: for a smooth fade-in/out */
     opacity: 0; /* Initially hidden */
+}
+
+/* Media Queries for the cursor*/
+
+@media (min-width: 768px) {
+    .cursor {
+        width: 750px;  /* Width of the gradient */
+        height: 750px; /* Height of the gradient */
+    }
+}
+
+@media (min-width: 1024px) {
+    .cursor {
+        width: 1500px;  /* Width of the gradient */
+        height: 1500px; /* Height of the gradient */
+    }
 }

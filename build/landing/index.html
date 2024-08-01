@@ -1,94 +1,172 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie-edge"/>
-    <link rel="stylesheet" href="../css/styles.css"/>
+  <head>
+    <!-- meta tags for the page -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="../css/output.css" />
 
     <!-- Links for the fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Links for the icons -->
-    <script src="https://kit.fontawesome.com/eaf0e737bf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/eaf0e737bf.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/mousemovements.js"></script>
 
+    <!-- Title of the page -->
+
     <title>Personal Portfolio Page | Ana Ledezma</title>
-</head>
+  </head>
 
-<!-- Step 1 of the Development -->
+  <!-- Step 1 of the Development -->
 
-<body class="page-background-color">
-<div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24">
-    <header>
-        <section id="personal-details" class="flex flex-col lg:w-1/3 lg:fixed lg:justify-between lg:h-screen lg:pb-20">
-            <div id="profile" class="flex flex-col items-start space-y-4">
-                <h1 class="text-4xl sm:text-5xl font-bold text-slate-200 text-left">Ana Ledezma</h1>
-                <h2 class="text-lg font-medium text-slate-200 text-left">Desired Title</h2>
-                <p class="text-md text-gray-400 text-left text-wrap whitespace-normal pr-20 max-w-sm">I build
-                    interesting stuff and I
-                    love my job. I also like doing cool stuff!</p>
-                <nav class="hidden lg:block self-start">
-                    <ul class="mt-10 w-max">
-                        <li>
-                            <a href="#About" class="group flex items-center py-3">
-                                <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-                                <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Experience" class="group flex items-center py-3">
-                                <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-                                <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Projects" class="group flex items-center py-3">
-                                <span class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
-                                <span class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="flex justify-self-end mt-8 lg:mb-24">
-                <ul class="flex gap-6 self-center items-center">
-                    <li>
-                        <a href="#" class="text-slate-400 hover:text-slate-200">
-                            <i class="icons fab fa-x-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-slate-400 hover:text-slate-200">
-                            <i class="icons fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-slate-400 hover:text-slate-200">
-                            <i class="icons fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-slate-400 hover:text-slate-200">
-                            <i class="icons fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-slate-400 hover:text-slate-200">
-                            <i class="icons fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+  <body class="page-background-color">
+    <!-- main container that declares all of the necessary style for the responsiveness of the page -->
+
+    <div
+      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24 lg:flex lg:justify-between lg:gap-4"
+    >
+      <!-- header section that contains the personal details of the user -->
+
+      <header>
+        <section
+          id="personal-details"
+          class="flex flex-col lg:w-1/3 lg:fixed lg:justify-between lg:h-screen lg:pb-20"
+        >
+          <div id="profile" class="flex flex-col items-start space-y-4">
+            <h1 class="text-4xl sm:text-5xl font-bold text-slate-200 text-left">
+              Ana Ledezma
+            </h1>
+            <h2 class="text-lg font-medium text-slate-300 text-left">
+              Desired Title
+            </h2>
+            <p
+              class="text-md font-extralight text-gray-400 text-left text-wrap whitespace-normal pr-20 max-w-sm"
+            >
+              I build interesting stuff and I love my job. I also like doing
+              cool stuff!
+            </p>
+            <nav class="hidden lg:block self-start">
+              <ul class="mt-10 w-max">
+                <li>
+                  <a href="#About" class="group flex items-center py-3">
+                    <span
+                      class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+                    ></span>
+                    <span
+                      class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >About</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#Experience" class="group flex items-center py-3">
+                    <span
+                      class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+                    ></span>
+                    <span
+                      class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >Experience</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="#Projects" class="group flex items-center py-3">
+                    <span
+                      class="mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
+                    ></span>
+                    <span
+                      class="text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >Projects</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex justify-self-end mt-8 lg:mb-24">
+            <ul class="flex gap-6 self-center items-center">
+              <li>
+                <a href="#" class="text-slate-400 hover:text-slate-200">
+                  <i class="icons fab fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-slate-400 hover:text-slate-200">
+                  <i class="icons fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-slate-400 hover:text-slate-200">
+                  <i class="icons fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-slate-400 hover:text-slate-200">
+                  <i class="icons fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="text-slate-400 hover:text-slate-200">
+                  <i class="icons fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
-    </header>
-    <main>
-        <section id="About" class="mt-24"></section>
-    </main>
-</div>
-</body>
+      </header>
+
+      <!-- main section that contains the about me details of the user -->
+
+      <main class="lg:w-1/2">
+        <!-- about me section -->
+
+        <section id="About" class="sm:mt-24 lg:mt-0">
+          <h2
+            class="text-sm font-bold text-slate-300 lg:hidden tracking-widest uppercase w-full sticky top:0"
+          >
+            About Me
+          </h2>
+          <p
+            class="text-base mt-6 text-slate-400 font-light sm:text-left pr-2 lg:mt-0 lg:text-justify"
+          >
+            In the twilight of a serene evening, I found myself lost in a dream,
+            whispering secrets to the stars. The emerald forest flickered with
+            laughter, each petal radiating harmony. As I wandered through this
+            kaleidoscope of colors, I remembered a quote: “Adventure awaits,”
+            and in that moment, the journey became my melody, a reflection of my
+            essence.
+          </p>
+          <p
+            class="text-base mt-6 text-slate-400 font-light sm:text-left pr-2 lg:text-justify"
+          >
+            Under the starlit sky, I embraced the tranquility of the night,
+            feeling the gentle breeze as it whispered through the trees. The
+            vibrant mosaic of colors danced around me, each flicker of light
+            echoing a joyful melody. I recalled the saying, “Life is a journey,”
+            and in that instant, the adventure unfolded, revealing the beauty of
+            every moment.
+          </p>
+          <p
+            class="text-base mt-6 text-slate-400 font-light sm:text-left pr-2 lg:text-justify"
+          >
+            In the stillness of the night, the stars twinkled like secrets.
+            “Every journey begins with a single step,” I thought, feeling the
+            cool breeze. Embracing the moment, I wandered forward, ready for
+            whatever beauty awaited me.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
