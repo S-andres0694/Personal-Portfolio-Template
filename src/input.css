@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page-background-color{
-        background: rgb(15, 23, 42, 1);
+    background-color: rgb(15 23 42);
 }
 
 html{
@@ -43,10 +43,25 @@ body{
 
 /* Media Queries for the cursor*/
 
-@media (min-width: 768px) {
+@media(min-width: 640px){
     .cursor {
-        width: 750px;  /* Width of the gradient */
-        height: 750px; /* Height of the gradient */
+        width: 600px;  /* Width of the gradient */
+        height: 600px; /* Height of the gradient */
+        top:0;
+        left:0;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media(min-width: 768px){
+    .cursor {
+        top:0;
+        left:0;
+        width: 1200px;  /* Width of the gradient */
+        height: 1200px; /* Height of the gradient */
+        visibility: visible;
+        opacity: 1;
     }
 }
 
@@ -54,5 +69,6 @@ body{
     .cursor {
         width: 1500px;  /* Width of the gradient */
         height: 1500px; /* Height of the gradient */
+        visibility: visible;
     }
 }

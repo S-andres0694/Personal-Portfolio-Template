@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(cursor);
 
     document.addEventListener('mousemove', (e) => {
-        cursor.style.left = `${e.pageX}px`;
-        cursor.style.top = `${e.pageY}px`;
-        cursor.style.opacity = '1'; // Show the cursor
+        if (window.innerWidth > 1024) {
+            cursor.style.left = `${e.pageX}px`;
+            cursor.style.top = `${e.pageY}px`
+            cursor.style.opacity = '1'; // Show the cursor
+        }
     });
 
     document.addEventListener('mouseleave', () => {
