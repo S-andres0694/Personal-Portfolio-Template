@@ -111,7 +111,7 @@
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o build/landing/styles.css --watch",
     "prettier": "npx prettier --write **/*.html",
-    "dev": "postcss build/landing/styles.css -o build/landing/output.css --dev"
+    "dev": "postcss build/landing/styles.css -o build/landing/output.css --dev && python3 runner.py && npx prettier --write **/*.html"
   },
   "keywords": [],
   "author": "",
