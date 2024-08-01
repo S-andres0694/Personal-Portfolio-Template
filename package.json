@@ -109,9 +109,9 @@
     "yaml": "^2.5.0"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o build/landing/styles.css --watch",
     "prettier": "npx prettier --write **/*.html",
-    "dev": "postcss ./build/css/styles.css -o ./build/css/output.css --dev"
+    "dev": "postcss build/landing/styles.css -o build/landing/output.css --dev"
   },
   "keywords": [],
   "author": "",
