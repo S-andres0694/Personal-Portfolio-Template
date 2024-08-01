@@ -1,4 +1,6 @@
 function setupNavbarAnimation(SectionId, NavId) {
+
+    //Intersection Observer API checks if the section is in the viewport using its ID
     document.addEventListener('DOMContentLoaded', () => {
         const Section = document.getElementById(SectionId);
         const Nav = document.getElementById(NavId);

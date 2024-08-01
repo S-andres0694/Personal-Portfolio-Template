@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.page-background-color{
-    background-color: rgb(15 23 42);
+html {
+    scroll-behavior: smooth;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
-html{
-    scroll-behavior: smooth;
+.page-background-color{
+    background-color: rgb(15 23 42);
 }
 
 body{
@@ -18,7 +20,7 @@ body{
     font-size: 1.6rem;
 }
 
-.cursor {
+.cursor{
     position: absolute;
     min-width: 600px;  /* Width of the gradient */
     min-height: 600px; /* Height of the gradient */
@@ -45,12 +47,12 @@ body{
 
 @media(min-width: 640px){
     .cursor {
-        width: 600px;  /* Width of the gradient */
-        height: 600px; /* Height of the gradient */
         top:0;
         left:0;
+        width: 800px;  /* Width of the gradient */
+        height: 800px; /* Height of the gradient */
         visibility: visible;
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -58,17 +60,16 @@ body{
     .cursor {
         top:0;
         left:0;
-        width: 1200px;  /* Width of the gradient */
-        height: 1200px; /* Height of the gradient */
+        width: 800px;  /* Width of the gradient */
+        height: 800px; /* Height of the gradient */
         visibility: visible;
-        opacity: 1;
     }
 }
 
 @media (min-width: 1024px) {
     .cursor {
-        width: 1500px;  /* Width of the gradient */
-        height: 1500px; /* Height of the gradient */
+        width: 800px;  /* Width of the gradient */
+        height: 800px; /* Height of the gradient */
         visibility: visible;
     }
 }

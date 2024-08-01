@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cursor = document.createElement('div');
+    const cursor = document.getElementById('cursor');
     cursor.classList.add('cursor');
-    document.body.appendChild(cursor);
 
     document.addEventListener('mousemove', (e) => {
         if (window.innerWidth > 1024) {
