@@ -1,4 +1,4 @@
-##Personal Portfolio Template
+# Personal Portfolio Template
 
 A customizable personal portfolio template built with HTML, CSS, and JavaScript. This template is designed to help you showcase your skills, projects, and experience in a modern, professional manner.
 
