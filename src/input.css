@@ -31,6 +31,7 @@ body{
     transform: translate(-50%, -50%); /* Center the cursor */
     transition: opacity 0.4s ease; /* Optional: for a smooth fade-in/out */
     opacity: 0; /* Initially hidden */
+    overflow: hidden;
 }
 
 .active .nav-indicator{
