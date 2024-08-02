@@ -1,6 +1,7 @@
 # Personal Portfolio Template
 
-A customizable personal portfolio template built with HTML, CSS, and JavaScript. This template is designed to help you showcase your skills, projects, and experience in a modern, professional manner.
+My own personal portfolio template built with HTML, Tailwind CSS, Vanilla JavaScript and NodeJS.
+This is an ongoing project to make the template much more easy to applicate.
 
 Features
 - Responsive Design: Fully responsive and mobile-friendly layout.
