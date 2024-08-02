@@ -44,6 +44,10 @@ body{
     color: rgb(226 232 240 / var(--tw-text-opacity));
 }
 
+.button-background-color{
+    background-color: #0F172A;
+}
+
 /* Media Queries for the cursor*/
 
 @media(min-width: 640px){
