@@ -4,3 +4,4 @@ node_modules
 /build/css/styles.css
 .DS_Store
 .vscode
+_site
