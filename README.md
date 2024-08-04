@@ -3,7 +3,8 @@
 My own personal portfolio template built with HTML, Tailwind CSS, Vanilla JavaScript and NodeJS.
 This is an ongoing project to make the template much more easy to applicate.
 
-Features
+Features:
+
 - Responsive Design: Fully responsive and mobile-friendly layout.
 - Customizable: Easy to personalize with your own information and projects.
 - Modern Look: Clean and stylish design to make a great first impression.
