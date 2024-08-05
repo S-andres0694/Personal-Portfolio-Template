@@ -1,3 +1,5 @@
+import sys
+
 def replace_line(file_path, target_line, replacement_line):
     result = False
     try:
@@ -23,7 +25,12 @@ def replace_line(file_path, target_line, replacement_line):
         print(f"Error: The file {file_path} does not exist.")
     except Exception as e:
         print(f"An error occurred: {e}")
-
-
-replace_line("./_includes/sections/head.html", '<link rel="stylesheet" href="./assets/CSS/styles.css" />',
+        
+if(sys.argv[1] == "output.css"):
+            replace_line("./_includes/sections/head.html", '<link rel="stylesheet" href="./assets/CSS/styles.css" />',
              '<link rel="stylesheet" href="./assets/CSS/output.css" />')
+elif sys.argv[1] == "styles.css":
+            replace_line("./_includes/sections/head.html", '<link rel="stylesheet" href="./assets/CSS/output.css" />',
+             '<link rel="stylesheet" href="./assets/CSS/styles.css" />')
+
+
