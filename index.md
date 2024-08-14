@@ -1,5 +1,4 @@
 ---
-# permalink: /sebas' portfolio website/
 layout: portfolio
 title: º
 
