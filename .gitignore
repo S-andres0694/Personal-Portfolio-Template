@@ -2,5 +2,6 @@
 node_modules
 .DS_Store
 .vscode
-./_site
-./assets/css/styles.css
+_site
+_site/**
+assets/css/styles.css
