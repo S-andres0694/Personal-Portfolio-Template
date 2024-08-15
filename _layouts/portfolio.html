@@ -1,10 +1,3 @@
-<!--
-
-Check for ////// if you are looking for empty values to fill!f
-Need to fix the about section to be more dynamic and not hardcoded
-
--->
-
 <!doctype html>
 <html lang="en" class="selection:bg-teal-300 selection:text-teal-900 antialiased">
 {% include sections/head.html %}
@@ -18,15 +11,16 @@ Need to fix the about section to be more dynamic and not hardcoded
     <!-- header section that contains the personal details of the user -->
 
     <header>
-      <section id="personal-details" class="flex flex-col lg:w-1/3 2xl:w-1/6 lg:fixed lg:justify-between lg:h-screen lg:pb-20">
+      <section id="personal-details"
+        class="flex flex-col lg:w-1/3 2xl:w-1/6 lg:fixed lg:justify-between lg:h-screen lg:pb-20">
         <div id="profile" class="flex flex-col items-start space-y-5">
           <div class="flex flex-col justify-between">
-            <h1 class="text-5xl sm:text-5xl font-bold text-wrap text-teal-300 text-left animated-text">
+            <h1 id="header-name" data-aos="fade-right" class="text-5xl sm:text-5xl font-bold text-wrap text-teal-300 text-left animated-text">
               Sebastian Andres El Khoury
             </h1>
             <div class="flex flex-col gap-0 mt-4">
               {% for details in page.profile-information.details %}
-              <h2 class="text-lg font-medium text-slate-100 text-left">
+              <h2 class="text-lg font-medium text-slate-100 text-left" data-aos="fade-right" data-aos-delay="100">
                 {{ details }}
               </h2>
               {%endfor%}
@@ -35,7 +29,7 @@ Need to fix the about section to be more dynamic and not hardcoded
               class="text-md font-light text-slate-100 tracking-wide text-left text-wrap whitespace-normal pr-20 max-w-sm">
               {{ page.profile-information.bottom- }}
             </p>
-            <nav class="hidden lg:block self-start">
+            <nav class="hidden lg:block self-start" data-aos="fade-right" data-aos-delay="200">
               <ul class="mt-10 w-max">
                 <li>
                   <a id="about-nav" href="#About" class="group flex items-center py-3">
@@ -66,11 +60,11 @@ Need to fix the about section to be more dynamic and not hardcoded
             </nav>
           </div>
           <div class="flex flex-col gap-4 lg:mb-24">
-            <h2 class="text-lg font-medium text-slate-100 lg:mt-8 text-left">
+            <h2 class="text-lg font-medium text-slate-100 lg:mt-8 text-left" data-aos="fade-right" data-aos-delay="300">
               Skills
             </h2>
             <div
-              class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start ">
+              class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start" data-aos="fade-right" data-aos-delay="300">
               {% for tech in page.skills %}
               <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">
                 {{ tech }}
@@ -78,7 +72,7 @@ Need to fix the about section to be more dynamic and not hardcoded
               {% endfor %}
             </div>
           </div>
-          </div>
+        </div>
         <div class="flex justify-self-end mt-8 lg:mb-24">
           <ul class="flex gap-6 self-center items-center">
             {% for social in page.social-media %}
@@ -99,9 +93,6 @@ Need to fix the about section to be more dynamic and not hardcoded
       <!-- about me section -->
 
       <section id="About" class="scroll-mt-24">
-        <h2 class="text-4xl lg:mb-16 font-bold text-slate-300 w-full lg:scroll-mt-32 scroll-mt-20 animated-text">
-          Who am I?
-        </h2>
         {% for paragraph in page.about-section %}
         <p
           class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed">
@@ -211,6 +202,9 @@ Need to fix the about section to be more dynamic and not hardcoded
       </footer>
     </main>
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
-
 </html>
