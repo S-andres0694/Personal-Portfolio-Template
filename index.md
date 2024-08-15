@@ -58,7 +58,7 @@ professional-experience:
 projects:
   - name: JSearch CLI Project
     image: ./assets/img/projects/command-line-interface.png
-    description: Developed an CLI using Hibernate, Maven, MySQL and RapidAPIs/RESTAPIs to efficiently organise 100+ job postings into a database. Automated the generation and emailing of Excel sheets, resulting in a monthly saving of over 20 hours of manual processing.
+    description: Developed an CLI to efficiently organise 100+ job postings into a database. Automated the generation and emailing of Excel sheets, resulting in a monthly saving of over 20 hours of manual processing.
     used-skills:
         - Java
         - Maven
