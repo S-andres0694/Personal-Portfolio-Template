@@ -113,7 +113,8 @@
     "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
     "prettier": "npx prettier --write */_layouts/*.html",
     "prod": "postcss assets/css/styles.css -o assets/css/styles.css --dev && python3 runner.py output.css && npx prettier --write ./_layouts/*.html",
-    "serve": "python3 runner.py styles.css && npx tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch"
+    "serve": "python3 runner.py styles.css && npx tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
+    "jekyll-build": "bundle exec jekyll build"
   },
   "keywords": [],
   "author": "",
