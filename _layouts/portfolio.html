@@ -115,10 +115,12 @@
       <main class="lg:w-1/2 mt-24 lg:mt-0">
         <!-- about me section -->
 
-        <section id="About" class="scroll-mt-24">
+        <section id="About" class="scroll-mt-24" data-aos="fade-right" data-aos-mirror="true">
           {% for paragraph in page.about-section %}
           <p
             class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed"
+            data-aos="fade-left"
+            data-aos-delay="100"
           >
             {{ paragraph }}
           </p>
@@ -134,9 +136,9 @@
           <div class="flex flex-col gap-20 lg:gap-32 mt-6 lg:mt-40">
             {% for job in page.professional-experience %}
 
-            <!-- first education element -->
+            <!-- education elements -->
 
-            <div>
+            <div data-aos="fade-left" data-aos-mirror="true">
               <div class="flex flex-row gap-24 lg:justify-between">
                 <p class="lg:text-sm text-base text-slate-300 font-light">{{ job.date }}</p>
                 <div class="items-end flex flex-col">
@@ -165,11 +167,11 @@
           >
             Projects
           </h2>
-          <!-- first project element -->
+          <!-- project elements -->
 
           {% for project in page.projects %}
 
-          <div class="container flex flex-col gap-20 lg:gap-32">
+          <div class="container flex flex-col gap-20 lg:gap-32" data-aos="zoom-in" data-aos-mirror="true">
             <div class="flex flex-col gap-6 border-animated">
               <div class="flex gap-10 items-start">
                 <img
