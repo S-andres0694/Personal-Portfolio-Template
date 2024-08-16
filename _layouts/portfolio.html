@@ -86,7 +86,7 @@
                 Skills
               </h2>
               <div
-                class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
+                class="flex-row flex-md-column flex-xl-row flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
@@ -120,40 +120,40 @@
           <p
             class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed"
             data-aos="fade-left"
-            data-aos-delay="100"
+            data-aos-delay="{{ forloop.index}}00"
           >
             {{ paragraph }}
           </p>
           {% endfor %}
         </section>
 
-        <section id="Professional Experience" class="lg:mb-36 scroll-mt-20">
+        <section id="Professional Experience" class="lg:mb-48 scroll-mt-20">
           <h2
             class="text-sm font-bold text-slate-300 lg:hidden mt-16 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6"
           >
             Professional Experience
           </h2>
-          <div class="flex flex-col gap-20 lg:gap-32 mt-6 lg:mt-40">
+          <div class="flex flex-col gap-20 lg:gap-10 mt-6 lg:mt-40">
             {% for job in page.professional-experience %}
 
             <!-- education elements -->
 
             <div data-aos="fade-left" data-aos-mirror="true">
               <div class="flex flex-row gap-24 lg:justify-between">
-                <p class="lg:text-sm text-base text-slate-300 font-light">{{ job.date }}</p>
+                <p class="lg:text-sm text-base text-slate-300 font-light" data-aos="fade-right" data-aos-delay="100">{{ job.date }}</p>
                 <div class="items-end flex flex-col">
                   <div class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
                     <h3
-                      class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0"
+                      class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0" data-aos="fade-right" data-aos-delay="200"
                     >
                       {{ job.company }}
                     </h3>
-                    <p class="text-base text-slate-300 font-light text-right">{{ job.position }}</p>
+                    <p class="text-base text-slate-300 font-light text-right" data-aos="fade-right" data-aos-delay="300">{{ job.position }}</p>
                   </div>
                 </div>
               </div>
               {% for paragraph in job.description %}
-              <p class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4">
+              <p class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4" data-aos="fade-right" data-aos-delay="{{ forloop.index }}00">
                 {{ paragraph }}
               </p>
               {% endfor %}
@@ -178,24 +178,26 @@
                   class="lg:w-52 w-24 md:w-36 h-auto rounded-md border-2 border-teal-400"
                   src="{{ project.image }}"
                   alt="Image of a built project"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
                 />
                 <div class="flex flex-col gap-2">
-                  <h3 class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text">
+                  <h3 class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text" data-aos="fade-left" data-aos-delay="100">
                     {{ project.name }}
                   </h3>
-                  <p class="text-base text-slate-200 font-normal text-right lg:text-justify">
+                  <p class="text-base text-slate-200 font-normal text-right lg:text-justify" data-aos="fade-left" data-aos-delay="200">
                     {{ project.description }}
                   </p>
                 </div>
               </div>
               <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
                 {% for tech in project.used-skills %}
-                <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">{{ tech }}</button>
+                <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm" data-aos="fade-up" data-aos-delay="300">{{ tech }}</button>
                 {% endfor %}
               </div>
               <div class="flex gap-4 justify-center">
-                <i class="icons text-slate-200 fab fa-github"></i>
-                <a href="{{ project.code-link }}" class="text-slate-200 hover:text-teal-300">View Code</a>
+                <i class="icons text-slate-200 fab fa-github" data-aos="zoom-in"></i>
+                <a href="{{ project.code-link }}" class="text-slate-200 hover:text-teal-300" data-aos="zoom-in">View Code</a>
               </div>
             </div>
             {% endfor %}
