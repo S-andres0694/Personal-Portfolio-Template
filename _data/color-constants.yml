@@ -1,0 +1,66 @@
+# GLOBAL CONSTANTS
+
+#Chooses the colors of the animated text
+animated-text-color-gradient: 
+  - rgb(94, 234, 212) 0%,
+  - rgb(128, 255, 230) 29%,
+  - rgb(162, 255, 248) 67%,
+  - rgb(196, 255, 255) 100%
+#Chooses the color of the text that has the name on it
+animated-border-color: rgb(94 234 212)
+#Chooses the color when the user selects the text
+highlight-color-class: "selection:bg-teal-300 selection:text-teal-900"  
+section-title-color-class: text-slate-300
+
+# PROFILE SECTION 
+
+#Chooses the color of the background behind the stars
+page-background-color: "rgb(0, 0, 0);"
+#Chooses the color of the text that is below the name
+profile-subtext-color-class: text-slate-100
+#Chooses the color of the background of the text in the skills buttons
+profile-background-button-color-class: bg-teal-400/10
+#Chooses the color of the text in the skills buttons
+profile-button-text-color-class: text-teal-300
+#Chooses the color of the text in the skills header
+profile-skills-header-color-class: text-slate-100
+#Chooses the Default and Hover color of the icons on the profile section
+profile-icon-color-classes: text-slate-400 hover:text-teal-300
+#Chooses the color of the text in the bio
+profile-bio-text-color-class: text-slate-200
+#Chooses the color of the text in the bio
+
+# PROFESSIONAL EXPERIENCE SECTION
+
+#Chooses the color of the job's dates
+prof-exp-date-color-class: text-slate-200
+#Chooses the color of the company
+prof-exp-company-color-class: text-teal-300
+#Chooses the color of the job's title
+prof-exp-title-color-class: text-slate-300
+#Chooses the color of the job's description
+prof-exp-description-color-class: text-slate-200
+
+# PROJECT SECTION
+
+#Chooses the color of the image border
+project-image-border-color: rgb(94 234 212)
+#Chooses the color of the project's description
+project-description-color-class: text-slate-200
+#Chooses the color of the "View Code Text" on default and on hover
+project-code-github-icon-color: text-slate-200
+
+# FOOTER SECTION
+
+#Chooses the color of the "Contact Me" text on default and on hover
+footer-contact-me-color-classes: text-teal-300 hover:text-teal-200
+#Chooses the color of the "Designed with" text
+footer-designed-with-color-class: text-slate-400
+#Chooses the color of the Footer Tech Stack bolded text
+footer-tech-stack-color-class: text-slate-100
+#Chooses the color of the Footer Designed By and Credits: text
+footer-designed-credits-color-class: text-slate-400
+#Chooses the color of the Footer Designed By and Credits highlighted text
+footer-designed-credits-highlight-color-class: hover:text-teal-200 text-slate-100
+
+

@@ -8,10 +8,6 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
-.page-background-color {
-  background: rgb(0, 0, 0);
-}
-
 body {
   font-family: 'Inter', sans-serif;
 }

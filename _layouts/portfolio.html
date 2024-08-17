@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="selection:bg-teal-300 selection:text-teal-900 antialiased page-background-color min-h-screen">
+<html lang="en" class="{{ site.data.color-constants.highlight-color-class }} antialiased min-h-screen" style="background: {{ site.data.color-constants.page-background-color }}">
 {% include sections/head.html %}
 
 <body id="body" class="overflow-x-hidden overflow-y-scroll min-h-screen page-background-color" data-aos="fade-in">
@@ -17,20 +17,16 @@
         <div id="profile" class="flex flex-col items-start space-y-5">
           <div class="flex flex-col justify-between">
             <h1 id="header-name" data-aos="fade-right"
-              class="text-5xl sm:text-5xl font-bold text-wrap text-teal-300 text-left animated-text">
+              class="text-5xl sm:text-5xl font-bold text-wrap {{ site.data.color-constants.title-color }} text-left animated-text py-1">
               Sebastian Andres El Khoury
             </h1>
             <div class="flex flex-col gap-0 mt-4">
               {% for details in page.profile-information.details %}
-              <h2 class="text-lg font-medium text-slate-100 text-left" data-aos="fade-right" data-aos-delay="100">
+              <h2 class="text-lg font-medium {{ site.data.color-constants.profile-subtext-color-class }} text-left" data-aos="fade-right" data-aos-delay="100">
                 {{ details }}
               </h2>
               {%endfor%}
             </div>
-            <p
-              class="text-md font-light text-slate-100 tracking-wide text-left text-wrap whitespace-normal pr-20 max-w-sm">
-              {{ page.profile-information.bottom- }}
-            </p>
             <nav class="hidden lg:block self-start" data-aos="fade-right" data-aos-delay="200">
               <ul class="mt-10 w-max">
                 <li>
@@ -62,14 +58,14 @@
             </nav>
           </div>
           <div class="flex flex-col gap-4 lg:mb-24">
-            <h2 class="text-lg font-medium text-slate-100 lg:mt-8 text-left" data-aos="fade-right" data-aos-delay="300">
+            <h2 class="text-lg font-medium {{ site.data.color-constants.profile-skills-header-color-class }} lg:mt-8 text-left" data-aos="fade-right" data-aos-delay="300">
               Skills
             </h2>
             <div
               class="flex-row flex-md-column flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
               data-aos="fade-right" data-aos-delay="300">
               {% for tech in page.skills %}
-              <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm">{{ tech }}</button>
+              <button class="rounded-3xl {{ site.data.color-constants.profile-background-button-color-class }} {{ site.data.color-constants.profile-button-text-color-class }} py-2 px-4 text-sm">{{ tech }}</button>
               {% endfor %}
             </div>
           </div>
@@ -78,7 +74,7 @@
           <ul class="flex gap-6 self-center items-center">
             {% for social in page.social-media %}
             <li>
-              <a href="{{ social.link }}" class="text-slate-400 hover:text-teal-300">
+              <a href="{{ social.link }}" class="{{ site.data.color-constants.profile-icon-color-classes }}">
                 <i class="{{ social.icon }}"></i>
               </a>
             </li>
@@ -95,8 +91,8 @@
 
       <section id="About" class="scroll-mt-24" data-aos="fade-right" data-aos-mirror="true">
         {% for paragraph in page.about-section %}
-        <p class="text-base mt-6 text-slate-200 font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed"
-          data-aos="fade-left" data-aos-delay="{{ forloop.index}}00">
+        <p class="text-base mt-6 {{ site.data.color-constants.profile-bio-text-color-class }} font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed"
+          data-aos="fade-left" data-aos-delay="{{ forloop.index}}00" data-aos-mirror="true">
           {{ paragraph }}
         </p>
         {% endfor %}
@@ -104,32 +100,32 @@
 
       <section id="Professional Experience" class="lg:mb-48 scroll-mt-20">
         <h2
-          class="text-sm font-bold text-slate-300 lg:hidden mt-16 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
+          class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-16 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
           Professional Experience
         </h2>
         <div class="flex flex-col gap-20 lg:gap-10 mt-6 lg:mt-40">
           {% for job in page.professional-experience %}
 
-          <!-- education elements -->
+          <!-- Professional Experience elements -->
 
           <div data-aos="fade-left" data-aos-mirror="true">
             <div class="flex flex-row gap-24 lg:justify-between">
-              <p class="lg:text-sm text-base text-slate-300 font-light" data-aos="fade-right" data-aos-delay="100">{{
+              <p class="lg:text-sm text-base {{ site.data.color-constants.prof-exp-date-color-class }} font-light" data-aos="fade-right" data-aos-delay="100">{{
                 job.date }}</p>
               <div class="items-end flex flex-col">
                 <div class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
                   <h3
-                    class="lg:text-lg text-2xl font-bold text-teal-300 text-right sm:text-center lg:text-right sm:py-0"
+                    class="lg:text-lg text-2xl font-bold {{ site.data.color-constants.prof-exp-company-color-class }} text-right sm:text-center lg:text-right sm:py-0"
                     data-aos="fade-right" data-aos-delay="200">
                     {{ job.company }}
                   </h3>
-                  <p class="text-base text-slate-300 font-light text-right" data-aos="fade-right" data-aos-delay="300">
+                  <p class="text-base {{ site.data.color-constants.prof-exp-title-color-class }} font-light text-right" data-aos="fade-right" data-aos-delay="300">
                     {{ job.title }}</p>
                 </div>
               </div>
             </div>
             {% for paragraph in job.description %}
-            <p class="text-justify lg:text-sm lg:visible lg:block text-slate-200 mt-4 font-normal lg:mb-4"
+            <p class="text-justify lg:text-sm lg:visible lg:block {{ site.data.color-constants.prof-exp-description-color-class }} mt-4 font-normal lg:mb-4"
               data-aos="fade-right" data-aos-delay="{{ forloop.index }}00">
               {{ paragraph }}
             </p>
@@ -140,7 +136,7 @@
       </section>
       <section id="Projects" class="scroll-mt-20">
         <h2
-          class="text-sm font-bold text-slate-300 lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
+          class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
           Projects
         </h2>
         <!-- project elements -->
@@ -150,14 +146,14 @@
         <div class="flex flex-col gap-20 lg:gap-32" data-aos="zoom-in" data-aos-mirror="true">
           <div class="flex flex-col gap-6 border-animated">
             <div class="flex gap-10 items-start">
-              <img class="lg:w-52 w-24 md:w-36 h-auto rounded-md border-2 border-teal-400" src="{{ project.image }}"
+              <img class="lg:w-52 w-24 md:w-36 h-auto rounded-md border-2" style="border-color: {{ site.data.color-constants.project-image-border-color }};" src="{{ project.image }}"
                 alt="Image of a built project" data-aos="fade-right" data-aos-delay="400" />
               <div class="flex flex-col gap-2">
-                <h3 class="text-xl font-bold text-teal-300 text-right lg:text-center animated-text" data-aos="fade-left"
+                <h3 class="text-xl font-bold text-right lg:text-center animated-text" data-aos="fade-left"
                   data-aos-delay="100">
                   {{ project.name }}
                 </h3>
-                <p class="text-base text-slate-200 font-normal text-right lg:text-justify" data-aos="fade-left"
+                <p class="text-base {{ site.data.color-constants.project-description-color-class }} font-normal text-right lg:text-justify" data-aos="fade-left"
                   data-aos-delay="200">
                   {{ project.description }}
                 </p>
@@ -165,13 +161,13 @@
             </div>
             <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
               {% for tech in project.used-skills %}
-              <button class="rounded-3xl bg-teal-400/10 text-teal-300 py-2 px-4 text-sm" data-aos="fade-up"
+              <button class="rounded-3xl {{ site.data.color-constants.profile-background-button-color-class }} {{ site.data.color-constants.profile-button-text-color-class }} 300 py-2 px-4 text-sm" data-aos="fade-up"
                 data-aos-delay="300">{{ tech }}</button>
               {% endfor %}
             </div>
             <div class="flex gap-4 justify-center">
-              <i class="icons text-slate-200 fab fa-github" data-aos="zoom-in"></i>
-              <a href="{{ project.code-link }}" class="text-slate-200 hover:text-teal-300" data-aos="zoom-in">View
+              <i class="icons {{ site.data.color-constants.project-code-github-icon-color }} fab fa-github" data-aos="zoom-in"></i> 
+              <a href="{{ project.code-link }}" class="{{ site.data.color-constants.project-code-github-icon-color }} hover:text-teal-300" data-aos="zoom-in">View
                 Code</a>
             </div>
           </div>
@@ -179,24 +175,24 @@
         </div>
       </section>
       <footer>
-        <div class="flex justify-between mt-12 lg:mt-2 gap-4 text-teal-300 rounded-xl py-4 flex-col">
-          <p class="text-slate-200 text-center">
+        <div class="flex justify-between mt-12 lg:mt-2 gap-4 rounded-xl py-4 flex-col">
+          <p class="text-center">
             <a href="mailto:sebasandres0694@gmail.com?subject=Interested in your services&body=I hope this message finds you well. My name is , and I recently came across your personal website. I was impressed by it and I wanted to talk to you about..."
-              class="text-teal-300 hover:text-teal-200">Contact me!</a>
+              class="{{ site.data.color-constants.footer-contact-me-color-classes }}">Contact me!</a>
           </p>
           <div class="flex-col flex gap-4">
-            <p class="text-slate-400 font-light text-center">
+            <p class="{{ site.data.color-constants.footer-designed-with-color-class }} font-light text-center">
               Designed using
-              <span class="font-bold text-slate-100">Tailwind CSS, Node.js and JavaScript</span>
+              <span class="font-bold {{ site.data.color-constants.footer-tech-stack-color-class }}">Tailwind CSS, Node.js and JavaScript</span>
             </p>
-            <p class="text-slate-400 font-light text-center">
+            <p class="{{ site.data.color-constants.footer-designed-credits-color-class }} font-light text-center">
               Designed and Coded by
-              <a href="https://github.com/S-andres0694" class="hover:text-teal-200 text-slate-200 font-bold">Sebastian
+              <a href="https://github.com/S-andres0694" class=" {{ site.data.color-constants.footer-designed-credits-highlight-color-class }} font-bold">Sebastian
                 El Khoury</a>
             </p>
-            <p class="text-slate-400 font-light text-center">
+            <p class="{{ site.data.color-constants.footer-designed-credits-color-class }} font-light text-center">
               Credits to
-              <a href="https://github.com/bchiang7" class="hover:text-teal-200 text-slate-200 font-bold">Brittany
+              <a href="https://github.com/bchiang7" class="{{ site.data.color-constants.footer-designed-credits-highlight-color-class }} font-bold">Brittany
                 Chiang</a>
               for the original design.
             </p>
@@ -210,5 +206,17 @@
     AOS.init();
   </script>
 </body>
-
+<style>
+  .border-animated{
+    --c: {{ site.data.color-constants.animated-border-color }}; /* the border color */
+  }
+  .animated-text{
+    background-image: linear-gradient(
+      -225deg,  
+      {% for color in site.data.color-constants.animated-text-color-gradient %}
+        {{ color }} 
+      {% endfor %}
+  );
+  }
+</style>
 </html>
