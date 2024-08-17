@@ -1,8 +1,3 @@
-html,
-body {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-}
-
 #stars {
   width: 1px;
   height: 1px;
@@ -2052,27 +2047,6 @@ body {
     1054px 1473px #fff,
     295px 719px #fff,
     1826px 375px #fff;
-}
-
-#title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  font-family: 'lato', sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @keyframes animStar {
