@@ -44,10 +44,9 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -90,7 +89,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -136,7 +135,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-feature-settings: normal;
   /* 2 */
@@ -379,8 +378,7 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -400,7 +398,7 @@ Set the default cursor for buttons.
 */
 
 button,
-[role='button'] {
+[role="button"] {
   cursor: pointer;
 }
 
@@ -448,9 +446,7 @@ video {
   display: none;
 }
 
-*,
-::before,
-::after {
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -764,7 +760,7 @@ video {
 
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
-  column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 
 .gap-y-2 {
@@ -1015,26 +1011,6 @@ body {
   font-size: 1.6rem;
 }
 
-.cursor {
-  position: absolute;
-  min-width: 600px;
-  /* Width of the gradient */
-  min-height: 600px;
-  /* Height of the gradient */
-  border-radius: 50%;
-  /* Makes it circular */
-  pointer-events: none;
-  /* So it doesn’t block clicks */
-  background: radial-gradient(circle, rgba(29, 78, 216, 0.15), transparent 60%);
-  transform: translate(-50%, -50%);
-  /* Center the cursor */
-  transition: opacity 0.4s ease;
-  /* Optional: for a smooth fade-in/out */
-  opacity: 0;
-  /* Initially hidden */
-  overflow: hidden;
-}
-
 .active .nav-indicator {
   width: 4rem;
   --tw-bg-opacity: 1;
@@ -1048,43 +1024,6 @@ body {
 
 .button-background-color {
   background-color: #0f172a;
-}
-
-/* Media Queries for the cursor*/
-
-@media (min-width: 640px) {
-  .cursor {
-    top: 0;
-    left: 0;
-    width: 800px;
-    /* Width of the gradient */
-    height: 800px;
-    /* Height of the gradient */
-    visibility: hidden;
-    opacity: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .cursor {
-    top: 0;
-    left: 0;
-    width: 800px;
-    /* Width of the gradient */
-    height: 800px;
-    /* Height of the gradient */
-    visibility: visible;
-  }
-}
-
-@media (min-width: 1024px) {
-  .cursor {
-    width: 800px;
-    /* Width of the gradient */
-    height: 800px;
-    /* Height of the gradient */
-    visibility: visible;
-  }
 }
 
 .selection\:bg-teal-300 *::-moz-selection {
