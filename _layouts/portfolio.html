@@ -1,14 +1,21 @@
 <!doctype html>
 <html lang="en" class="{{ site.data.color-constants.highlight-color-class }} antialiased min-h-screen" style="background: {{ site.data.color-constants.page-background-color }}">
+
 {% include sections/head.html %}
 
 <body id="body" class="overflow-x-hidden overflow-y-scroll min-h-screen page-background-color" data-aos="fade-in">
-  <!-- main container that declares all of the necessary style for the responsiveness of the page -->
+  
+  <!-- stars background code -->
+
   <div id='stars'></div>
   <div id='stars2' ></div>
   <div id='stars3' ></div>
+
+  <!-- main container that declares all of the necessary style for the responsiveness of the page -->
+
   <div
     class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24 lg:flex lg:justify-between lg:gap-4 xl:gap-60 ">
+
     <!-- header section that contains the personal details of the user -->
 
     <header>
@@ -84,10 +91,11 @@
       </section>
     </header>
 
-    <!-- main section that contains the about me details of the user -->
+    <!-- Main section that contains the about the details of the user -->
 
     <main class="lg:w-1/2 mt-10 lg:mt-0">
-      <!-- about me section -->
+
+      <!-- About Me Section -->
 
       <section id="About" class="scroll-mt-24" data-aos="fade-right" data-aos-mirror="true">
         {% for paragraph in page.about-section %}
@@ -98,6 +106,8 @@
         {% endfor %}
       </section>
 
+      <!-- Professional Experience Section -->
+
       <section id="Professional Experience" class="lg:mb-48 scroll-mt-20">
         <h2
           class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-16 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
@@ -106,27 +116,27 @@
         <div class="flex flex-col gap-20 lg:gap-10 mt-6 lg:mt-40">
           {% for job in page.professional-experience %}
 
-          <!-- Professional Experience elements -->
+          <!-- Professional Experience Elements -->
 
-          <div data-aos="fade-left" data-aos-mirror="true">
+          <div>
             <div class="flex flex-row gap-24 lg:justify-between">
-              <p class="lg:text-sm text-base {{ site.data.color-constants.prof-exp-date-color-class }} font-light" data-aos="fade-right" data-aos-delay="100">{{
+              <p class="lg:text-sm text-base {{ site.data.color-constants.prof-exp-date-color-class }} font-light" data-aos="fade-right" data-aos-delay="100" data-aos-mirror="true">{{
                 job.date }}</p>
               <div class="items-end flex flex-col">
                 <div class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
                   <h3
                     class="lg:text-lg text-2xl font-bold {{ site.data.color-constants.prof-exp-company-color-class }} text-right sm:text-center lg:text-right sm:py-0"
-                    data-aos="fade-right" data-aos-delay="200">
+                    data-aos="fade-right" data-aos-delay="200" data-aos-mirror="true">
                     {{ job.company }}
                   </h3>
-                  <p class="text-base {{ site.data.color-constants.prof-exp-title-color-class }} font-light text-right" data-aos="fade-right" data-aos-delay="300">
+                  <p class="text-base {{ site.data.color-constants.prof-exp-title-color-class }} font-light text-right" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
                     {{ job.title }}</p>
                 </div>
               </div>
             </div>
             {% for paragraph in job.description %}
             <p class="text-justify lg:text-sm lg:visible lg:block {{ site.data.color-constants.prof-exp-description-color-class }} mt-4 font-normal lg:mb-4"
-              data-aos="fade-right" data-aos-delay="{{ forloop.index }}00">
+              data-aos="fade-right" data-aos-delay="{{ forloop.index }}00" data-aos-mirror="true">
               {{ paragraph }}
             </p>
             {% endfor %}
@@ -134,12 +144,16 @@
           {% endfor %}
         </div>
       </section>
+
+      <!-- Projects Section -->
+
       <section id="Projects" class="scroll-mt-20">
         <h2
           class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
           Projects
         </h2>
-        <!-- project elements -->
+
+        <!-- Project Elements -->
 
         {% for project in page.projects %}
 
@@ -174,6 +188,9 @@
           {% endfor %}
         </div>
       </section>
+        
+      <!-- Footer Section -->
+
       <footer>
         <div class="flex justify-between mt-12 lg:mt-2 gap-4 rounded-xl py-4 flex-col">
           <p class="text-center">
