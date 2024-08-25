@@ -31,6 +31,17 @@ profile-icon-color-classes: text-slate-400 hover:text-teal-300
 profile-bio-text-color-class: text-slate-200
 #Chooses the color of the text in the bio
 
+#EDUCATION SECTION
+
+#Chooses the color of the education's image caption
+education-image-caption-color-class: text-teal-300
+#Chooses the color of the education's image sub-caption
+education-image-sub-caption-color-class: text-slate-200
+#Chooses the color of the education's date
+education-date-color-class: text-slate-200
+#Chooses the color of the description of the education
+education-description-color-class: text-slate-200
+
 # PROFESSIONAL EXPERIENCE SECTION
 
 #Chooses the color of the job's dates

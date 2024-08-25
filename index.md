@@ -9,10 +9,10 @@ profile-information:
     - University of St Andrews
     - Front End Developer Intern @ TechInterview.coach
   bottom-text:
-    - "Aspiring Full Stack Developer with a passion for creating and developing anything CS!"  
-    
+    - 'Aspiring Full Stack Developer with a passion for creating and developing anything CS!'
+
 social-media:
-  - github: 
+  - github:
     icon: icons fab fa-github
     link: https://github.com/S-andres0694/S-andres0694
   - linkedin:
@@ -33,12 +33,45 @@ skills:
   - Java
   - Maven
   - Git
-  
+
 about-section:
   - Aspiring software developer currently pursuing a Bachelor's in Computer Science, with a focus on leveraging programming skills to craft innovative solutions.
   - Eager to gain hands-on experience with <strong class="font-bold"> React.js, Node.js, and Spring Boot, while enhancing expertise in Python, JavaScript, and Full Stack Development. </strong>
-  - Strong problem-solving abilities with a proactive approach to learning and adapting, driven by a deep interest in emerging technologies and best practices in software development. 
+  - Strong problem-solving abilities with a proactive approach to learning and adapting, driven by a deep interest in emerging technologies and best practices in software development.
   - Enthusiastic about contributing to dynamic projects, fostering a collaborative environment, and developing skills to address real-world challenges in technology.
+
+education:
+  - degree: BSc in Computer Science
+    image:
+      location: ./assets/img/education & certifications/st-andrews-logo.jpeg
+      alt: University of St Andrews
+      width: 60%
+    date: Sep 2023 - Present (Exp. 2027)
+    institution: University of St Andrews
+    currently-in: 2nd-Year
+    abilities:
+      - Java
+      - StreamsAPI
+      - SQL
+      - Hibernate
+      - ORM
+      - Maven
+      - JUnit
+      - OOP
+    description:
+      - 'During my first year as part of the International Year One of Science, I developed a strong foundation in Object Oriented Programming. Similarly, I gained experience in the manipulation of IO streams, data structures and Database Operations.'
+      - '<span class="font-bold">As a second-year student I am looking forward to taking modules that will introduce me to the world of operating systems and computer networks, as well as some of the principles of software engineering.</span>'
+      - Awarded a High-Merit for academic excellence in the first year, as part of the International Science Year One Programme for CS
+
+certifications:
+  - name: Responsive Web Design
+    date: Aug 2024
+    institution: freeCodeCamp
+    description:
+      - 'Utilised CSS3 and HTML5 to enhance web development skills, focusing on modern standards and best practices'
+      - 'Learned and applied concepts including visual design, accessibility, and responsive web design principles, improving overall web project quality.'
+      - 'Developed 10+ learning projects, showcased in my GitHub repository, demonstrating practical application of my acquired web development skills.'
+    skills: Responsive Web Design, HTML5, CSS3
 
 professional-experience:
   - company: Tech Interview.Coach
@@ -60,20 +93,19 @@ projects:
     image: ./assets/img/projects/command-line-interface.png
     description: Developed an CLI to efficiently organise 100+ job postings into a database. Automated the generation and emailing of Excel sheets, resulting in a monthly saving of over 20 hours of manual processing.
     used-skills:
-        - Java
-        - Maven
-        - Hibernate
-        - MySQL
+      - Java
+      - Maven
+      - Hibernate
+      - MySQL
     code-link: https://github.com/S-andres0694/LinkedinAPI-Project
-  - name:  Personal Portfolio Website Template
+  - name: Personal Portfolio Website Template
     image: ./assets/img/projects/portfolio-image.png
     description: Developed a responsive personal portfolio template designed to highlight professional skills, projects, and achievements. Focused on creating a user-friendly and visually appealing design that adapts seamlessly across all devices. The design was inspired by Brittany Chiang's portfolio.
     used-skills:
-        - Jekyll
-        - Node.js
-        - Tailwind CSS
-        - HTML5
-        - JS
+      - Jekyll
+      - Node.js
+      - Tailwind CSS
+      - HTML5
+      - JS
     code-link: https://github.com/S-andres0694/Personal-Portfolio-Template
-
 ---
