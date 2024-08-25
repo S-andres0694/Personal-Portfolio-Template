@@ -12,11 +12,11 @@ animated-border-color: rgb(94 234 212)
 highlight-color-class: "selection:bg-teal-300 selection:text-teal-900"
 #Chooses the color of the sections that appear in certain widths  
 section-title-color-class: text-slate-300
+#Chooses the color of the background behind the stars
+page-background-color: "rgb(0, 0, 0);"
 
 # PROFILE SECTION 
 
-#Chooses the color of the background behind the stars
-page-background-color: "rgb(0, 0, 0);"
 #Chooses the color of the text that is below the name
 profile-subtext-color-class: text-slate-100
 #Chooses the color of the background of the text in the skills buttons
@@ -63,5 +63,3 @@ footer-tech-stack-color-class: text-slate-100
 footer-designed-credits-color-class: text-slate-400
 #Chooses the color of the Footer Designed By and Credits highlighted text
 footer-designed-credits-highlight-color-class: hover:text-teal-200 text-slate-100
-
-

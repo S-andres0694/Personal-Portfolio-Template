@@ -121,7 +121,7 @@
     "prettier": "npx prettier --write */_layouts/*.html",
     "prod": "python3 runner.py styles.css && postcss assets/css/styles.css -o assets/css/styles.css --dev && npx prettier --write ./_layouts/*.html",
     "serve": "python3 runner.py styles.css && npx tailwindcss -i ./src/input.css -o ./assets/css/styles.css --watch",
-    "jekyll-build": "bundle exec jekyll serve",
+    "jekyll-build": "bundle exec jekyll build && bundle exec jekyll serve",
     "sass-compile": "sass ./sass/background.scss ./assets/css/background.css"
   },
   "husky": {
