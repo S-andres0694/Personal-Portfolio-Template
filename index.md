@@ -64,7 +64,7 @@ education:
       - Awarded a High-Merit for academic excellence in the first year, as part of the International Science Year One Programme for CS
 
 certifications:
-  - name: Responsive Web Design
+  - name: Responsive Web Design Certification
     date: Aug 2024
     institution: freeCodeCamp
     image:
