@@ -110,14 +110,15 @@
       </section>
 
       <!-- Education Section -->
-      <section id="education" class="scroll-mt-20">
+      <section id="education" class="scroll-mt-20 lg:mt-32">
         <h2
           class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-16 tracking-widest uppercase w-full top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
           Education and Certifications
         </h2>
 
         <!-- Education Sources -->
-        <div class="flex flex-col">
+        <div class="flex flex-col gap-20">
+
           {% for education_element in page.education %}
 
           <!-- Education Elements -->
@@ -130,9 +131,6 @@
                 class="text-2xl font-bold text-left {{ site.data.color-constants.education-image-caption-color-class }}" data-aos="fade-left" data-aos-delay="200" data-aos-mirror="true">
                 {{ education_element.institution }}
               </h2>
-              <h3
-                class="text-lg font-bold text-left {{ site.data.color-constants.education-image-sub-caption-color-class}}" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
-                {{ education_element.degree }}</h3>
               <p class="text-base font-light text-left {{ site.data.color-constants.education-date-color-class }}" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
                 {{ education_element.date }}</p>
               <p class="text-base font-light text-left {{ site.data.color-constants.education-date-color-class }}"  data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
@@ -149,8 +147,37 @@
             </div>
           </div>
           {% endfor %}
+
+          <!-- Certification Elements -->
+
+        {% for certification_element in page.certifications %}
+
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-start">
+            <img class="h-auto rounded-lg mb-4 z-10" src="{{ certification_element.image.location }}"
+              alt="{{ certification.image.alt }}" style="width: {{ certification_element.image.width }}" data-aos="fade-right" data-aos-delay="100" data-aos-mirror="true"  />
+            <h2
+              class="text-2xl font-bold text-left {{ site.data.color-constants.education-image-caption-color-class }}" data-aos="fade-left" data-aos-delay="200" data-aos-mirror="true">
+              {{ certification_element.institution }}
+            </h2>
+            <h3
+              class="text-lg font-bold text-left {{ site.data.color-constants.education-image-sub-caption-color-class}}" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
+              {{ certification_element.degree }}</h3>
+            <p class="text-base font-light text-left {{ site.data.color-constants.education-date-color-class }}" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true"><span class="font-bold">Obtained in {{ certification_element.date }}</span></p>
+          </div>
+          <div class="flex flex-col gap-5">
+            {% for paragraph in certification_element.description %}
+            <p class="text-justify {{ site.data.color-constants.education-description-color-class }} font-normal"  data-aos="fade-left" data-aos-delay="400" data-aos-mirror="true">
+              {{ paragraph }}
+            </p>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
         </div>
       </section>
+
+        
 
       <!-- Professional Experience Section -->
 
