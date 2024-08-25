@@ -838,10 +838,6 @@ video {
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
-.bg-teal-400\/10 {
-  background-color: rgb(45 212 191 / 0.1);
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -960,34 +956,9 @@ video {
   letter-spacing: 0.1em;
 }
 
-.text-slate-100 {
-  --tw-text-opacity: 1;
-  color: rgb(241 245 249 / var(--tw-text-opacity));
-}
-
-.text-slate-200 {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-slate-300 {
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.text-slate-400 {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
 .text-slate-500 {
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
-}
-
-.text-teal-300 {
-  --tw-text-opacity: 1;
-  color: rgb(94 234 212 / var(--tw-text-opacity));
 }
 
 .antialiased {
@@ -1028,51 +999,6 @@ body {
 
 .button-background-color {
   background-color: #0f172a;
-}
-
-.selection\:bg-teal-300 *::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-teal-300 *::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
-}
-
-.selection\:text-teal-900 *::-moz-selection {
-  --tw-text-opacity: 1;
-  color: rgb(19 78 74 / var(--tw-text-opacity));
-}
-
-.selection\:text-teal-900 *::selection {
-  --tw-text-opacity: 1;
-  color: rgb(19 78 74 / var(--tw-text-opacity));
-}
-
-.selection\:bg-teal-300::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-teal-300::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(94 234 212 / var(--tw-bg-opacity));
-}
-
-.selection\:text-teal-900::-moz-selection {
-  --tw-text-opacity: 1;
-  color: rgb(19 78 74 / var(--tw-text-opacity));
-}
-
-.selection\:text-teal-900::selection {
-  --tw-text-opacity: 1;
-  color: rgb(19 78 74 / var(--tw-text-opacity));
-}
-
-.hover\:text-teal-200:hover {
-  --tw-text-opacity: 1;
-  color: rgb(153 246 228 / var(--tw-text-opacity));
 }
 
 .hover\:text-teal-300:hover {
