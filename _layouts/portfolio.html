@@ -1,327 +1,316 @@
 <!doctype html>
-<html
-  lang="en"
-  class="{{ site.data.color-constants.highlight-color-class }} antialiased min-h-screen"
-  style="background: {{ site.data.color-constants.page-background-color }}"
->
-  {% include sections/head.html %}
+<html lang="en" class="{{ site.data.color-constants.highlight-color-class }} antialiased min-h-screen"
+  style="background: {{ site.data.color-constants.page-background-color }}">
+{% include sections/head.html %}
 
-  <body id="body" class="overflow-x-hidden overflow-y-scroll min-h-screen page-background-color" data-aos="fade-in">
-    <!-- stars background code -->
+<body id="body" class="overflow-x-hidden overflow-y-scroll min-h-screen page-background-color" data-aos="fade-in">
+  <!-- stars background code -->
 
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
 
-    <!-- main container that declares all of the necessary style for the responsiveness of the page -->
+  <!-- main container that declares all of the necessary style for the responsiveness of the page -->
 
-    <div
-      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24 lg:flex lg:justify-between lg:gap-4 xl:gap-60"
-    >
-      <!-- header section that contains the personal details of the user -->
+  <div
+    class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-24 lg:flex lg:justify-between lg:gap-4 xl:gap-60">
+    <!-- header section that contains the personal details of the user -->
 
-      <header>
-        <section
-          id="personal-details"
-          class="flex flex-col lg:w-1/3 2xl:w-1/6 lg:fixed lg:justify-between lg:h-screen lg:pb-20"
-        >
-          <div id="profile" class="flex flex-col items-start space-y-5">
-            <div class="flex flex-col justify-between">
-              <h1
-                id="header-name"
-                data-aos="fade-right"
-                class="text-5xl sm:text-5xl font-bold text-wrap text-left animated-text py-1"
-              >
-                Sebastian Andres El Khoury
-              </h1>
-              <div class="flex flex-col gap-0 mt-4">
-                {% for details in page.profile-information.details %}
-                <h2
-                  class="text-lg font-medium {{ site.data.color-constants.profile-subtext-color-class }} text-left"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                >
-                  {{ details }}
-                </h2>
-                {%endfor%}
-              </div>
-              <nav class="hidden lg:block self-start" data-aos="fade-right" data-aos-delay="200">
-                <ul class="mt-10 w-max">
-                  <li>
-                    <a id="about-nav" href="#About" class="group flex items-center py-3">
-                      <span
-                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
-                      ></span>
-                      <span
-                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-                        >About</span
-                      >
-                    </a>
-                  </li>
-                  <li>
-                    <a id="education-nav" href="#Professional Experience" class="group flex items-center py-3">
-                      <span
-                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
-                      ></span>
-                      <span
-                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-                        >Professional Experience</span
-                      >
-                    </a>
-                  </li>
-                  <li>
-                    <a id="projects-nav" href="#Projects" class="group flex items-center py-3">
-                      <span
-                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"
-                      ></span>
-                      <span
-                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200"
-                        >Projects</span
-                      >
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="flex flex-col gap-4 lg:mb-24">
-              <h2
-                class="text-lg font-medium {{ site.data.color-constants.profile-skills-header-color-class }} lg:mt-8 text-left"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                Skills
+    <header>
+      <section id="personal-details"
+        class="flex flex-col lg:w-1/3 2xl:w-1/6 lg:fixed lg:justify-between lg:h-screen lg:pb-20">
+        <div id="profile" class="flex flex-col items-start space-y-5">
+          <div class="flex flex-col justify-between">
+            <h1 id="header-name" data-aos="fade-right"
+              class="text-5xl sm:text-5xl font-bold text-wrap text-left animated-text py-1">
+              Sebastian Andres El Khoury
+            </h1>
+            <div class="flex flex-col gap-0 mt-4">
+              {% for details in page.profile-information.details %}
+              <h2 class="text-lg font-medium {{ site.data.color-constants.profile-subtext-color-class }} text-left"
+                data-aos="fade-right" data-aos-delay="100">
+                {{ details }}
               </h2>
-              <div
-                class="flex-row flex-md-column flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                {% for tech in page.skills %}
-                <button
-                  class="rounded-3xl {{ site.data.color-constants.profile-background-button-color-class }} {{ site.data.color-constants.profile-button-text-color-class }} py-2 px-4 text-sm"
-                >
-                  {{ tech }}
-                </button>
-                {% endfor %}
-              </div>
+              {%endfor%}
+            </div>
+            <nav class="hidden lg:block self-start" data-aos="fade-right" data-aos-delay="200">
+              <ul class="mt-10 w-max">
+                <li>
+                  <a id="about-nav" href="#About" class="group flex items-center py-3">
+                    <span
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
+                    <span
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="education-nav" href="#Professional Experience" class="group flex items-center py-3">
+                    <span
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
+                    <span
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Professional
+                      Experience</span>
+                  </a>
+                </li>
+                <li>
+                  <a id="projects-nav" href="#Projects" class="group flex items-center py-3">
+                    <span
+                      class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200"></span>
+                    <span
+                      class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex flex-col gap-4 lg:mb-24">
+            <h2
+              class="text-lg font-medium {{ site.data.color-constants.profile-skills-header-color-class }} lg:mt-8 text-left"
+              data-aos="fade-right" data-aos-delay="300">
+              Skills
+            </h2>
+            <div
+              class="flex-row flex-md-column flex flex-wrap gap-y-2 gap-x-2 justify-start mt-2 lg:mt-0 md:justify-start items-start"
+              data-aos="fade-right" data-aos-delay="300">
+              {% for tech in page.skills %}
+              <button
+                class="rounded-3xl {{ site.data.color-constants.profile-background-button-color-class }} {{ site.data.color-constants.profile-button-text-color-class }} py-2 px-4 text-sm">
+                {{ tech }}
+              </button>
+              {% endfor %}
             </div>
           </div>
-          <div class="flex justify-self-end mt-8 lg:mb-24">
-            <ul class="flex gap-6 self-center items-center">
-              {% for social in page.social-media %}
-              <li>
-                <a href="{{ social.link }}" class="{{ site.data.color-constants.profile-icon-color-classes }}">
-                  <i class="{{ social.icon }}"></i>
-                </a>
-              </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </section>
-      </header>
+        </div>
+        <div class="flex justify-self-end mt-8 lg:mb-24">
+          <ul class="flex gap-6 self-center items-center">
+            {% for social in page.social-media %}
+            <li>
+              <a href="{{ social.link }}" class="{{ site.data.color-constants.profile-icon-color-classes }}">
+                <i class="{{ social.icon }}"></i>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    </header>
 
-      <!-- Main section that contains the about the details of the user -->
+    <!-- Main section that contains the about the details of the user -->
 
-      <main class="lg:w-1/2 mt-10 lg:mt-0">
-        <!-- About Me Section -->
+    <main class="lg:w-1/2 mt-10 lg:mt-0">
+      <!-- About Me Section -->
 
-        <section id="About" class="scroll-mt-24" data-aos="fade-right" data-aos-mirror="true">
-          {% for paragraph in page.about-section %}
-          <p
-            class="text-base mt-6 {{ site.data.color-constants.profile-bio-text-color-class }} font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed"
-            data-aos="fade-left"
-            data-aos-delay="{{ forloop.index}}00"
-            data-aos-mirror="true"
-          >
-            {{ paragraph }}
-          </p>
-          {% endfor %}
-        </section>
+      <section id="About" class="scroll-mt-24" data-aos="fade-right" data-aos-mirror="true">
+        {% for paragraph in page.about-section %}
+        <p class="text-base mt-6 {{ site.data.color-constants.profile-bio-text-color-class }} font-light sm:text-left pr-2 lg:mt-0 mb-4 lg:text-justify leading-relaxed"
+          data-aos="fade-left" data-aos-delay="{{ forloop.index}}00" data-aos-mirror="true">
+          {{ paragraph }}
+        </p>
+        {% endfor %}
+      </section>
 
-        <!-- Professional Experience Section -->
+      <!-- Education Section -->
+      <section id="education" class="scroll-mt-20">
+        <h2
+          class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-16 tracking-widest uppercase w-full top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
+          Education and Certifications
+        </h2>
 
-        <section id="Professional Experience" class="lg:mb-48 scroll-mt-20">
-          <h2
-            class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-16 tracking-widest uppercase w-full sticky top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6"
-          >
-            Professional Experience
-          </h2>
-          <div class="flex flex-col gap-20 lg:gap-10 mt-6 lg:mt-40">
-            {% for job in page.professional-experience %}
+        <!-- Education Sources -->
+        <div class="flex flex-col">
+          {% for education_element in page.education %}
 
-            <!-- Professional Experience Elements -->
+          <!-- Education Elements -->
 
-            <div>
-              <div class="flex flex-row gap-24 lg:justify-between">
-                <p
-                  class="lg:text-sm text-base {{ site.data.color-constants.prof-exp-date-color-class }} font-light"
-                  data-aos="fade-right"
-                  data-aos-delay="100"
-                  data-aos-mirror="true"
-                >
-                  {{ job.date }}
-                </p>
-                <div class="items-end flex flex-col">
-                  <div class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
-                    <h3
-                      class="lg:text-lg text-2xl font-bold {{ site.data.color-constants.prof-exp-company-color-class }} text-right sm:text-center lg:text-right sm:py-0"
-                      data-aos="fade-right"
-                      data-aos-delay="200"
-                      data-aos-mirror="true"
-                    >
-                      {{ job.company }}
-                    </h3>
-                    <p
-                      class="text-base {{ site.data.color-constants.prof-exp-title-color-class }} font-light text-right"
-                      data-aos="fade-right"
-                      data-aos-delay="300"
-                      data-aos-mirror="true"
-                    >
-                      {{ job.title }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {% for paragraph in job.description %}
-              <p
-                class="text-justify lg:text-sm lg:visible lg:block {{ site.data.color-constants.prof-exp-description-color-class }} mt-4 font-normal lg:mb-4"
-                data-aos="fade-right"
-                data-aos-delay="{{ forloop.index }}00"
-                data-aos-mirror="true"
-              >
+          <div class="flex flex-col gap-10">
+            <div class="flex flex-col items-start">
+              <img class="h-auto rounded-lg mb-4" src="{{ education_element.image.location }}"
+                alt="{{ education_element.image.alt }}" style="width: {{ education_element.image.width}}" data-aos="fade-right" data-aos-delay="100" data-aos-mirror="true"  />
+              <h2
+                class="text-2xl font-bold text-left {{ site.data.color-constants.education-image-caption-color-class }}" data-aos="fade-left" data-aos-delay="200" data-aos-mirror="true">
+                {{ education_element.institution }}
+              </h2>
+              <h3
+                class="text-lg font-bold text-left {{ site.data.color-constants.education-image-sub-caption-color-class}}" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
+                {{ education_element.degree }}</h3>
+              <p class="text-base font-light text-left {{ site.data.color-constants.education-date-color-class }}" data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
+                {{ education_element.date }}</p>
+              <p class="text-base font-light text-left {{ site.data.color-constants.education-date-color-class }}"  data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
+                Currently In:
+                <span class="font-bold"  data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">{{ education_element.currently-in }}</span>
+              </p>
+            </div>
+            <div class="flex flex-col gap-5">
+              {% for paragraph in education_element.description %}
+              <p class="text-justify {{ site.data.color-constants.education-description-color-class }} font-normal"  data-aos="fade-left" data-aos-delay="400" data-aos-mirror="true">
                 {{ paragraph }}
               </p>
               {% endfor %}
             </div>
-            {% endfor %}
           </div>
-        </section>
+          {% endfor %}
+        </div>
+      </section>
 
-        <!-- Projects Section -->
+      <!-- Professional Experience Section -->
 
-        <section id="Projects" class="scroll-mt-20">
-          <h2
-            class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6"
-          >
-            Projects
-          </h2>
+      <section id="Professional Experience" class="lg:mb-48 scroll-mt-20">
+        <h2
+          class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-16 tracking-widest uppercase w-full top:0 lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
+          Professional Experience
+        </h2>
+        <div class="flex flex-col gap-20 lg:gap-10 mt-6 lg:mt-40">
+          {% for job in page.professional-experience %}
 
-          <!-- Project Elements -->
+          <!-- Professional Experience Elements -->
 
-          {% for project in page.projects %}
-
-          <div class="flex flex-col gap-20 lg:gap-32" data-aos="zoom-in" data-aos-mirror="true">
-            <div class="flex flex-col gap-6 border-animated">
-              <div class="flex gap-10 items-start">
-                <img
-                  class="lg:w-52 w-24 md:w-36 h-auto rounded-md border-2"
-                  style="border-color: {{ site.data.color-constants.project-image-border-color }};"
-                  src="{{ project.image }}"
-                  alt="Image of a built project"
-                  data-aos="fade-right"
-                  data-aos-delay="400"
-                />
-                <div class="flex flex-col gap-2">
+          <div>
+            <div class="flex flex-row gap-24 lg:justify-between">
+              <p class="lg:text-sm text-base {{ site.data.color-constants.prof-exp-date-color-class }} font-light"
+                data-aos="fade-right" data-aos-delay="100" data-aos-mirror="true">
+                {{ job.date }}
+              </p>
+              <div class="items-end flex flex-col">
+                <div class="flex flex-col sm:flex-row lg:flex-col gap-2 sm:gap-10 lg:gap-0 w-full items-end">
                   <h3
-                    class="text-xl font-bold text-right lg:text-center animated-text"
-                    data-aos="fade-left"
-                    data-aos-delay="100"
-                  >
-                    {{ project.name }}
+                    class="lg:text-lg text-2xl font-bold {{ site.data.color-constants.prof-exp-company-color-class }} text-right sm:text-center lg:text-right sm:py-0"
+                    data-aos="fade-right" data-aos-delay="200" data-aos-mirror="true">
+                    {{ job.company }}
                   </h3>
-                  <p
-                    class="text-base {{ site.data.color-constants.project-description-color-class }} font-normal text-right lg:text-justify"
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                  >
-                    {{ project.description }}
+                  <p class="text-base {{ site.data.color-constants.prof-exp-title-color-class }} font-light text-right"
+                    data-aos="fade-right" data-aos-delay="300" data-aos-mirror="true">
+                    {{ job.title }}
                   </p>
                 </div>
               </div>
-              <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
-                {% for tech in project.used-skills %}
-                <button
-                  class="rounded-3xl {{ site.data.color-constants.profile-background-button-color-class }} {{ site.data.color-constants.profile-button-text-color-class }} 300 py-2 px-4 text-sm"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  {{ tech }}
-                </button>
-                {% endfor %}
-              </div>
-              <div class="flex gap-4 justify-center">
-                <i
-                  class="icons {{ site.data.color-constants.project-code-github-icon-color }} fab fa-github"
-                  data-aos="zoom-in"
-                ></i>
-                <a
-                  href="{{ project.code-link }}"
-                  class="{{ site.data.color-constants.project-code-github-icon-color }} hover:text-teal-300"
-                  data-aos="zoom-in"
-                  >View Code</a
-                >
-              </div>
             </div>
+            {% for paragraph in job.description %}
+            <p class="text-justify lg:text-sm lg:visible lg:block {{ site.data.color-constants.prof-exp-description-color-class }} mt-4 font-normal lg:mb-4"
+              data-aos="fade-right" data-aos-delay="{{ forloop.index }}00" data-aos-mirror="true">
+              {{ paragraph }}
+            </p>
             {% endfor %}
           </div>
-        </section>
+          {% endfor %}
+        </div>
+      </section>
 
-        <!-- Footer Section -->
+      <!-- Projects Section -->
 
-        <footer>
-          <div class="flex justify-between mt-12 lg:mt-2 gap-4 rounded-xl py-4 flex-col">
-            <p class="text-center">
-              <a
-                href="mailto:sebasandres0694@gmail.com?subject=Interested in your services&body=I hope this message finds you well. My name is , and I recently came across your personal website. I was impressed by it and I wanted to talk to you about..."
-                class="{{ site.data.color-constants.footer-contact-me-color-classes }}"
-                >Contact me!</a
-              >
-            </p>
-            <div class="flex-col flex gap-4">
-              <p class="{{ site.data.color-constants.footer-designed-with-color-class }} font-light text-center">
-                Designed using
-                <span class="font-bold {{ site.data.color-constants.footer-tech-stack-color-class }}"
-                  >Tailwind CSS, Node.js and JavaScript</span
-                >
-              </p>
-              <p class="{{ site.data.color-constants.footer-designed-credits-color-class }} font-light text-center">
-                Designed and Coded by
-                <a
-                  href="https://github.com/S-andres0694"
-                  class=" {{ site.data.color-constants.footer-designed-credits-highlight-color-class }} font-bold"
-                  >Sebastian El Khoury</a
-                >
-              </p>
-              <p class="{{ site.data.color-constants.footer-designed-credits-color-class }} font-light text-center">
-                Credits to
-                <a
-                  href="https://github.com/bchiang7"
-                  class="{{ site.data.color-constants.footer-designed-credits-highlight-color-class }} font-bold"
-                  >Brittany Chiang</a
-                >
-                for the original design.
-              </p>
+      <section id="Projects" class="scroll-mt-20">
+        <h2
+          class="text-sm font-bold {{ site.data.color-constants.section-title-color-class }} lg:hidden mt-36 tracking-widest uppercase w-full lg:lg:scroll-mt-32 scroll-mt-20 mb-6">
+          Projects
+        </h2>
+
+        <!-- Project Elements -->
+
+        {% for project in page.projects %}
+
+        <div class="flex flex-col gap-20 lg:gap-32" data-aos="zoom-in" data-aos-mirror="true">
+          <div class="flex flex-col gap-6 border-animated">
+            <div class="flex gap-10 items-start">
+              <img class="lg:w-52 w-24 md:w-36 h-auto rounded-md border-2"
+                style="border-color: {{ site.data.color-constants.project-image-border-color }};"
+                src="{{ project.image }}" alt="Image of a built project" data-aos="fade-right" data-aos-delay="400" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-xl font-bold text-right lg:text-center animated-text" data-aos="fade-left"
+                  data-aos-delay="100">
+                  {{ project.name }}
+                </h3>
+                <p class="text-base {{ site.data.color-constants.project-description-color-class }} font-normal text-right lg:text-justify"
+                  data-aos="fade-left" data-aos-delay="200">
+                  {{ project.description }}
+                </p>
+              </div>
+            </div>
+            <div class="flex-row flex flex-wrap gap-y-2 gap-x-2 justify-center">
+              {% for tech in project.used-skills %}
+              <button
+                class="rounded-3xl {{ site.data.color-constants.profile-background-button-color-class }} {{ site.data.color-constants.profile-button-text-color-class }} 300 py-2 px-4 text-sm"
+                data-aos="fade-up" data-aos-delay="300">
+                {{ tech }}
+              </button>
+              {% endfor %}
+            </div>
+            <div class="flex gap-4 justify-center">
+              <i class="icons {{ site.data.color-constants.project-code-github-icon-color }} fab fa-github"
+                data-aos="zoom-in"></i>
+              <a href="{{ project.code-link }}"
+                class="{{ site.data.color-constants.project-code-github-icon-color }} hover:text-teal-300"
+                data-aos="zoom-in">View Code</a>
             </div>
           </div>
-        </footer>
-      </main>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-  <style>
-    .border-animated{
-      --c: {{ site.data.color-constants.animated-border-color }}; /* the border color */
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+
+      <footer>
+        <div class="flex justify-between mt-12 lg:mt-2 gap-4 rounded-xl py-4 flex-col">
+          <p class="text-center">
+            <a href="mailto:sebasandres0694@gmail.com?subject=Interested in your services&body=I hope this message finds you well. My name is , and I recently came across your personal website. I was impressed by it and I wanted to talk to you about..."
+              class="{{ site.data.color-constants.footer-contact-me-color-classes }}">Contact me!</a>
+          </p>
+          <div class="flex-col flex gap-4">
+            <p class="{{ site.data.color-constants.footer-designed-with-color-class }} font-light text-center">
+              Designed using
+              <span class="font-bold {{ site.data.color-constants.footer-tech-stack-color-class }}">Tailwind CSS,
+                Node.js and JavaScript</span>
+            </p>
+            <p class="{{ site.data.color-constants.footer-designed-credits-color-class }} font-light text-center">
+              Designed and Coded by
+              <a href="https://github.com/S-andres0694"
+                class=" {{ site.data.color-constants.footer-designed-credits-highlight-color-class }} font-bold">Sebastian
+                El Khoury</a>
+            </p>
+            <p class="{{ site.data.color-constants.footer-designed-credits-color-class }} font-light text-center">
+              Credits to
+              <a href="https://github.com/bchiang7"
+                class="{{ site.data.color-constants.footer-designed-credits-highlight-color-class }} font-bold">Brittany
+                Chiang</a>
+              for the original design.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<style>
+  .border-animated {
+    --c: {
+        {
+        site.data.color-constants.animated-border-color
+      }
     }
-    .animated-text{
-      background-image: linear-gradient(
-        -225deg,
-        {% for color in site.data.color-constants.animated-text-color-gradient %}
-          {{ color }}
-        {% endfor %}
-    );
+
+    ;
+    /* the border color */
+  }
+
+  .animated-text {
+
+    background-image: linear-gradient(-225deg,
+      {
+      % for color in site.data.color-constants.animated-text-color-gradient %
     }
-  </style>
+
+      {
+        {
+        color
+      }
+    }
+
+      {
+      % endfor %
+    });
+  }
+</style>
+
 </html>
