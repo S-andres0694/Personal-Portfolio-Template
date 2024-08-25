@@ -9,7 +9,8 @@ animated-text-color-gradient:
 #Chooses the color of the text that has the name on it
 animated-border-color: rgb(94 234 212)
 #Chooses the color when the user selects the text
-highlight-color-class: "selection:bg-teal-300 selection:text-teal-900"  
+highlight-color-class: "selection:bg-teal-300 selection:text-teal-900"
+#Chooses the color of the sections that appear in certain widths  
 section-title-color-class: text-slate-300
 
 # PROFILE SECTION 
