@@ -67,6 +67,10 @@ certifications:
   - name: Responsive Web Design
     date: Aug 2024
     institution: freeCodeCamp
+    image:
+      location: ./assets/img/education & certifications/free-code-camp-logo.jpeg
+      alt: University of St Andrews
+      width: 60%
     description:
       - 'Utilised CSS3 and HTML5 to enhance web development skills, focusing on modern standards and best practices'
       - 'Learned and applied concepts including visual design, accessibility, and responsive web design principles, improving overall web project quality.'
