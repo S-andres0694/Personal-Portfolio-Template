@@ -28,7 +28,7 @@
           <div class="flex flex-col justify-between">
             <h1 id="header-name" data-aos="fade-right"
               class="text-5xl sm:text-5xl font-bold text-wrap text-left animated-text py-1">
-              Sebastian Andres El Khoury S.
+              Sebastian Andres El Khoury
             </h1>
             <div class="flex flex-col gap-0 mt-4">
               {% for details in page.profile-information.details %}
@@ -206,9 +206,9 @@
       </section>
 
       <!-- Background Code for the SM Resolution -->
-        <div class="stars md:hidden"></div>
-        <div class="stars2 md:hidden"></div>
-        <div class="stars3 md:hidden"></div>
+      <div class="stars md:hidden"></div>
+      <div class="stars2 md:hidden"></div>
+      <div class="stars3 md:hidden"></div>
 
       <!-- Professional Experience Section -->
 
@@ -342,19 +342,12 @@
   .animated-text {
 
     background-image: linear-gradient(-225deg,
-      {
-      % for color in site.data.color-constants.animated-text-color-gradient %
-    }
+      {% for color in site.data.color-constants.animated-text-color-gradient %}
 
-      {
-        {
-        color
-      }
-    }
+      {{ color }}
 
-      {
-      % endfor %
-    });
+      {% endfor %}
+    )!important;
   }
 </style>
 
