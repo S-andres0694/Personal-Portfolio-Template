@@ -665,10 +665,6 @@ video {
   height: 1px;
 }
 
-.h-0 {
-  height: 0px;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1101,10 +1097,6 @@ body {
 }
 
 @media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
