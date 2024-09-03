@@ -1,0 +1,16 @@
+[build]
+  # Command to run during the build process
+  command = "bundle exec jekyll build"  # Replace with your specific build command
+  publish = "public"  # Replace with the directory where your site will be published
+
+[context.production.environment]
+  RUBY_VERSION = "3.1.0"
+
+[context.deploy-preview.environment]
+  RUBY_VERSION = "3.1.0"
+
+[context.branch-deploy.environment]
+  RUBY_VERSION = "3.1.0"
+
+[context.development.environment]
+  RUBY_VERSION = "3.1.0"
