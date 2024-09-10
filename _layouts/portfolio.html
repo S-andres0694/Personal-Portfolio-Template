@@ -206,9 +206,9 @@
       </section>
 
       <!-- Background Code for the SM Resolution -->
-        <div class="stars md:hidden"></div>
-        <div class="stars2 md:hidden"></div>
-        <div class="stars3 md:hidden"></div>
+      <div class="stars md:hidden"></div>
+      <div class="stars2 md:hidden"></div>
+      <div class="stars3 md:hidden"></div>
 
       <!-- Professional Experience Section -->
 
@@ -342,19 +342,10 @@
   .animated-text {
 
     background-image: linear-gradient(-225deg,
-      {
-      % for color in site.data.color-constants.animated-text-color-gradient %
-    }
+      {% for color in site.data.color-constants.animated-text-color-gradient %}
 
-      {
-        {
-        color
-      }
-    }
-
-      {
-      % endfor %
-    });
+      {{ color }}
+      {% endfor %}) !important;
   }
 </style>
 
