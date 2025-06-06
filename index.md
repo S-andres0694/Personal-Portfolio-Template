@@ -7,9 +7,8 @@ profile-information:
     - BSc in Computer Science
     - 2nd-Year Student
     - University of St Andrews
-    - Front End Developer Intern @ TechInterview.coach
   bottom-text:
-    - 'Aspiring Full Stack Developer with a passion for creating and developing anything CS!'
+    - "Pursuing a Bachelor's in Computer Science with a focus on developing innovative solutions through programming while expanding expertise in React, Node, AWS, and TypeScript to strengthen Full Stack Development skills"
 
 social-media:
   - github:
@@ -23,16 +22,16 @@ social-media:
     link: https://standardresume.co/r/SebastianElKhourySeoane
 
 skills:
-  - Responsive Web Design
-  - HTML5
-  - CSS3
-  - Jekyll
-  - JS
-  - MySQL
+  - React
+  - Kubernetes
+  - Docker
+  - TypeScript/JavaScript
+  - HTML5 - CSS3
+  - SQL
   - Python
-  - Java
-  - Maven
   - Git
+  - Node.js
+  - Java
 
 about-section:
   - Aspiring software developer currently pursuing a Bachelor's in Computer Science, with a focus on leveraging programming skills to craft innovative solutions.
@@ -59,10 +58,8 @@ education:
       - JUnit
       - OOP
     description:
-      - 'During my first year as part of the International Year One of Science, I developed a strong foundation in Object Oriented Programming. Similarly, I gained experience in the manipulation of IO streams, data structures and Database Operations.'
-      - '<span class="font-bold">As a second-year student I am looking forward to taking modules that will introduce me to the world of operating systems and computer networks, as well as some of the principles of software engineering.</span>'
-      - Awarded a High-Merit for academic excellence in the first year, as part of the International Science Year One Programme for CS
-
+      - '<span class="font-bold">Relevant Courses: Foundations of Computation (Algorithms and Data Structures), Advanced Programming Projects (Python and Haskell) and The Internet and The Web (Networks and Programming Web Applications)</span>'
+      - 'Completed the International Year One of Computer Science Foundational Course with High Merit.'
 certifications:
   - name: Responsive Web Design Certification
     date: Aug 2024
@@ -72,14 +69,33 @@ certifications:
       alt: University of St Andrews
       width: 60%
     description:
-      - 'Utilised CSS3 and HTML5 to enhance web development skills, focusing on modern standards and best practices'
+      - 'Utilized CSS3 and HTML5 to enhance web development skills, focusing on modern standards and best practices'
       - 'Learned and applied concepts including visual design, accessibility, and responsive web design principles, improving overall web project quality.'
       - 'Developed 10+ learning projects, showcased in my GitHub repository, demonstrating practical application of my acquired web development skills.'
     skills: Responsive Web Design, HTML5, CSS3
+  - name: Back End Development and APIs
+    date: Jan 2025
+    institution: freeCodeCamp
+    image:
+      location: ./assets/img/education & certifications/free-code-camp-logo.jpeg
+      alt: FreeCodeCamp Logo
+      width: 60%
+    description:
+      - 'Developed RESTful APIs using Node.js and Express.js to handle client-server communication'
+      - 'Engineered and managed MongoDB databases using Mongoose, implementing schemas, models, and CRUD operations'
+      - 'Gained hands-on experience with Node.js and Express through the creation of 5 projects in order to earn the certification.'  
+    skills: Node.js, Express.js, MongoDB, Mongoose  
 
 professional-experience:
+  - company: University of St. Andrews
+    date: Oct 2024 - Dec 2024
+    title: Software Developer StARIS Intern
+    description:
+      - 'Authored PLANLib, an open-source library of planning problems and solutions, enhancing accessibility for more than 100 participating teams in the International Planning Competition'
+      - 'Built a statically generated website designed to store over 100+ planning problems using Jekyll, Bootstrap 5, and Vanilla JS to improve presentation, responsiveness, and functionality.'
+      - 'Implemented a CI/CD pipeline with GitHub Pages, ensuring seamless and automated deployment.Created an integration test suite using Cypress, boosting test coverage and reliability'
   - company: Tech Interview.Coach
-    date: Jun 2024 - Present
+    date: Jun 2024 - Sep 2024
     title: Front End Developer Intern
     description:
       - Participate in code reviews, debugging, and troubleshooting to resolve front-end issues efficiently.
@@ -93,15 +109,23 @@ professional-experience:
       - Delivered technical support for a Java coding activity to 30+ offer holders, enhancing their understanding of basic programming skills and improving their readiness for the course.
 
 projects:
-  - name: JSearch CLI Project
-    image: ./assets/img/projects/command-line-interface.png
-    description: Developed an CLI to efficiently organise 100+ job postings into a database. Automated the generation and emailing of Excel sheets, resulting in a monthly saving of over 20 hours of manual processing.
-    used-skills:
-      - Java
-      - Maven
-      - Hibernate
-      - MySQL
-    code-link: https://github.com/S-andres0694/LinkedinAPI-Project
+  - name: House Searcher
+    image: ./assets/img/projects/house-searcher.png
+    description: 
+      - House Searcher is a web application that allows users to search for housing including both a client-side application built with React and a server-side application built with Express.
+      - Currently building a React Front-End with TypeScript, ensuring a responsive and user-friendly interface.
+      - Designed and implemented RESTful APIs using Express.js for seamless client-server communication.
+      - Implemented continuous integration testing with Jest, strengthening code reliability and maintainability achieving over.
+      - Set up CI/CD pipelines using Docker and GitHub Actions, enabling automated builds, testing, and deployment.
+      - Enabled Continuous Deployment on Heroku, demonstrating expertise in cloud hosting and deployment strategies.
+    used-skills: 
+      - React
+      - TypeScript
+      - PostgreSQL
+      - GitHub Actions
+      - Jest
+      - Express.js
+    code-link: https://github.com/S-andres0694/Full-Stack-House-Searcher
   - name: Personal Portfolio Website Template
     image: ./assets/img/projects/portfolio-image.png
     description: Developed a responsive personal portfolio template designed to highlight professional skills, projects, and achievements. Focused on creating a user-friendly and visually appealing design that adapts seamlessly across all devices. The design was inspired by Brittany Chiang's portfolio.
