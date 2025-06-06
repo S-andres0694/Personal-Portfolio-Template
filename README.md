@@ -1,7 +1,6 @@
 # Personal Portfolio Template
 
-My own personal portfolio template built with HTML, Tailwind CSS, Vanilla JavaScript and NodeJS.
-This is an ongoing project to make the template much more easy to applicate.
+My own personal portfolio template built with HTML, Tailwind CSS, Vanilla JavaScript and Jekyll
 
 Features:
 
