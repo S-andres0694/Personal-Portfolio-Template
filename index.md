@@ -113,11 +113,6 @@ projects:
     image: ./assets/img/projects/house-searcher.png
     description: 
       - House Searcher is a web application that allows users to search for housing including both a client-side application built with React and a server-side application built with Express.
-      - Currently building a React Front-End with TypeScript, ensuring a responsive and user-friendly interface.
-      - Designed and implemented RESTful APIs using Express.js for seamless client-server communication.
-      - Implemented continuous integration testing with Jest, strengthening code reliability and maintainability achieving over.
-      - Set up CI/CD pipelines using Docker and GitHub Actions, enabling automated builds, testing, and deployment.
-      - Enabled Continuous Deployment on Heroku, demonstrating expertise in cloud hosting and deployment strategies.
     used-skills: 
       - React
       - TypeScript
