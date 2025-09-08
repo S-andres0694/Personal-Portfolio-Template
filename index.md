@@ -5,10 +5,10 @@ title: Sebastian El Khoury
 profile-information:
   details:
     - BSc in Computer Science
-    - 2nd-Year Student
+    - Penultimate Year Student
     - University of St Andrews
   bottom-text:
-    - "Pursuing a Bachelor's in Computer Science with a focus on developing innovative solutions through programming while expanding expertise in React, Node, AWS, and TypeScript to strengthen Full Stack Development skills"
+    - "Pursuing a Bachelor's in Computer Science with a focus on developing innovative solutions through programming while expanding expertise in React, Kubernetes, and TypeScript to strengthen my Full-Stack Development and DevOps skills"
 
 social-media:
   - github:
@@ -34,11 +34,7 @@ skills:
   - Java
 
 about-section:
-  - Aspiring software developer currently pursuing a Bachelor's in Computer Science, with a focus on leveraging programming skills to craft innovative solutions.
-  - Eager to gain hands-on experience with <strong class="font-bold"> React.js, Node.js, and Spring Boot, while enhancing expertise in Python, JavaScript, and Full Stack Development. </strong>
-  - Strong problem-solving abilities with a proactive approach to learning and adapting, driven by a deep interest in emerging technologies and best practices in software development.
-  - Enthusiastic about contributing to dynamic projects, fostering a collaborative environment, and developing skills to address real-world challenges in technology.
-
+  - Penultimate Year Computer Science student from the University of St. Andrews with hands-on experience building PLANLib, an open-source planning library adopted by 100+ teams. Constructed and maintained CI/CD pipelines with GitHub Actions, and architected responsive React interfaces and TypeScript backends for web applications. Eager to leverage expertise in Docker, Kubernetes, TypeScript and full-stack development to accelerate delivery of scalable software solutions.
 education:
   - degree: BSc in Computer Science
     image:
@@ -47,7 +43,7 @@ education:
       width: 60%
     date: Sep 2023 - Present (Exp. 2027)
     institution: University of St Andrews
-    currently-in: 2nd-Year
+    currently-in: 3rd Year
     abilities:
       - Java
       - StreamsAPI
@@ -57,9 +53,12 @@ education:
       - Maven
       - JUnit
       - OOP
+      - C
+      - Systems Programming and Unix Systems
     description:
       - '<span class="font-bold">Relevant Courses: Foundations of Computation (Algorithms and Data Structures), Advanced Programming Projects (Python and Haskell) and The Internet and The Web (Networks and Programming Web Applications)</span>'
       - 'Completed the International Year One of Computer Science Foundational Course with High Merit.'
+      - "Grade: Distinction, GPA of 17.9/20.0 equivalent to Dean's List"
 certifications:
   - name: Responsive Web Design Certification
     date: Aug 2024
